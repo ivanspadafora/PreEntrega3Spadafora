@@ -1,0 +1,100 @@
+.containerDiv{
+    grid-area: div;
+    background-color: #ffffff;
+    display: block;
+}
+
+.deportes{
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.crossfit{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.crossfit:hover{
+    background-color: rgba(0, 0, 0, 0.511);
+    transition: 0.5s;  
+}
+
+.crossfit a:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.01ms;
+}
+
+.funcional{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.funcional:hover{
+    background-color: rgba(0, 0, 0, 0.511);
+    transition: 1s; 
+}
+.funcional a:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.01ms;
+}
+
+.gimnasio{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.gimnasio:hover{
+    background-color: rgba(0, 0, 0, 0.474);
+    transition: 1s; 
+}
+.gimnasio a:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.01ms;
+}
+
+.boxeo{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.boxeo:hover{
+    background-color: rgba(0, 0, 0, 0.511);
+    transition: 1s; 
+}
+.boxeo a:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.01ms;
+}
