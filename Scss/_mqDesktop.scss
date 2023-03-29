@@ -1,0 +1,123 @@
+@media (min-width:920px) and (max-width:1400px){
+    .barraNav{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .barraNav a{
+        font-size: 2rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .main h1{
+        font-size: 4.5rem;
+    }
+
+    .main .clases{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .fotoaside{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .containerAside{
+        width: 100%;
+        height: auto;
+    }
+
+    .asideH3{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .aside h2{
+        font-size: 3.5rem;
+    }
+
+    .aside p{
+        font-size: 2rem;
+    }
+
+    .aside button{
+        width: 10rem;
+        height: 5rem;
+        margin-left: 35%;
+    }
+
+    .aside a{
+        font-size: 1.5rem;
+    }
+
+    .caja, .caja2{
+        display:contents;
+    }
+
+    .caja p{
+        font-size: 1.5rem;
+    }
+
+    .caja2 p{
+        font-size: 1.5rem;
+    }
+
+    .caja h2, .caja2 h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .sectionClases {
+        width: auto;
+        display: block;
+    }
+
+    .col img{
+        width: 100%;
+    }
+
+    .sectionClases div{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .aCrossfit, .aFuncional, .aGimnasio, .aBoxeo{
+        font-size: 3rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+    .footer img{
+        justify-content: space-between;
+        float: right;
+        padding: 5px;
+        margin-right: 165px;
+    }
+
+    .logo{
+        font-size: 2.5rem;
+    }
+
+    .barraNav a{
+        font-size: 2.5rem;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .prigsH2{
+        font-size: 2.8rem;
+    }
+}

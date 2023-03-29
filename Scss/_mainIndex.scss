@@ -1,0 +1,33 @@
+.divMain{
+    .h1Main{
+        font-size: 3.6rem;
+        color: rgb(255, 255, 255);
+        text-align: center;    
+        border-radius: 15px;
+        padding: 10px;
+        letter-spacing: 5px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.759);
+            transition: 2s;
+        }
+    }
+    .clases{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-family: $tipografia-general;
+    margin-bottom: 50px;
+    padding: 20px;
+    font-size: 2rem;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.754);
+        transition: 1s;
+        a:hover{
+            background-color: transparent;
+            color: white;
+            }
+        }
+    }
+}

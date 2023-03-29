@@ -17,8 +17,7 @@ html, body {
   height: 100vh;
   background-size: cover;
 }
-
-.logo {
+.fondo .logo {
   text-decoration: none;
   font-family: "Playfair Display", serif;
   color: white;
@@ -27,7 +26,7 @@ html, body {
   padding: 20px;
 }
 
-.barraNav {
+.divNav .barraNav {
   text-decoration: none;
   display: inline-flex;
   padding-left: 27.5rem;
@@ -37,14 +36,26 @@ html, body {
   font-weight: 700;
   letter-spacing: 2px;
 }
-
-.barraNav a:hover {
+.divNav .barraNav a:hover {
   background-color: rgba(0, 0, 0, 0.568627451);
   transition: 1s;
   border-radius: 100px;
 }
 
-.clases {
+.divMain .h1Main {
+  font-size: 3.6rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  letter-spacing: 5px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.divMain .h1Main:hover {
+  background-color: rgba(0, 0, 0, 0.759);
+  transition: 2s;
+}
+.divMain .clases {
   background-color: transparent;
   color: rgb(255, 255, 255);
   font-family: "Playfair Display", serif;
@@ -54,65 +65,54 @@ html, body {
   transition: 0.5s;
   cursor: pointer;
 }
-
-.clases:hover {
+.divMain .clases:hover {
   background-color: rgba(0, 0, 0, 0.754);
   transition: 1s;
 }
-
-.clases a:hover {
+.divMain .clases:hover a:hover {
   background-color: transparent;
   color: white;
 }
 
-.h1Main {
-  font-size: 3.6rem;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  border-radius: 15px;
-  padding: 10px;
-  letter-spacing: 5px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-.h1Main:hover {
-  background-color: rgba(0, 0, 0, 0.759);
-  transition: 2s;
-}
-
-.containerSection {
-  grid-area: section;
-  background-color: #efefef;
-}
-
-.caja {
+.divIndex .caja {
   display: table-cell;
   margin: 0 auto;
   padding: 10px;
   height: auto;
 }
-
-.caja2 {
+.divIndex .caja h2 {
+  color: rgba(107, 33, 177, 0.7921568627);
+  text-align: center;
+  padding: 2rem 2rem 1rem;
+}
+.divIndex .caja p {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1rem;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: #7d7d7d;
+  overflow: hidden;
+  text-align: center;
+}
+.divIndex .caja hr {
+  width: 100px;
+  background-color: rgba(138, 13, 255, 0.705);
+  margin: 0 auto;
+}
+.divIndex .caja2 {
   display: table-cell;
   background-color: rgba(128, 128, 128, 0.243);
   margin: 0 auto;
   padding: 10px;
   height: auto;
 }
-
-.caja h2 {
+.divIndex .caja2 h2 {
   color: rgba(107, 33, 177, 0.7921568627);
   text-align: center;
   padding: 2rem 2rem 1rem;
 }
-
-.caja2 h2 {
-  color: rgba(107, 33, 177, 0.7921568627);
-  text-align: center;
-  padding: 2rem 2rem 1rem;
-}
-
-.caja p {
+.divIndex .caja2 p {
   text-align: center;
   font-weight: 200;
   font-size: 1rem;
@@ -122,19 +122,7 @@ html, body {
   overflow: hidden;
   text-align: center;
 }
-
-.caja2 p {
-  text-align: center;
-  font-weight: 200;
-  font-size: 1rem;
-  padding: 2rem;
-  font-family: "Roboto", sans-serif;
-  color: #7d7d7d;
-  overflow: hidden;
-  text-align: center;
-}
-
-hr {
+.divIndex .caja2 hr {
   width: 100px;
   background-color: rgba(138, 13, 255, 0.705);
   margin: 0 auto;
@@ -147,14 +135,19 @@ hr {
   height: auto;
   padding: 50px;
 }
-
-.aside {
+.containerAside .fotoaside {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+.containerAside .aside {
   color: #7d7d7d;
   background-color: #efefef;
   margin: auto;
 }
-
-.asideH3 {
+.containerAside .aside .asideH2 {
   font-size: 2.5rem;
   padding: 10px;
   margin: auto auto;
@@ -162,40 +155,26 @@ hr {
   text-align: center;
   font-weight: bold;
 }
-
-.aside h2 {
+.containerAside .aside h3 {
   font-size: 3rem;
   font-weight: bolder;
 }
-
-.h2g {
+.containerAside .aside .h3g {
   color: rgba(107, 33, 177, 0.7921568627);
   font-family: "Lato", sans-serif;
 }
-
-.h2p {
+.containerAside .aside .h3p {
   color: #000000;
   font-family: "Lato", sans-serif;
-  font-weight: 500;
 }
-
-.aside p {
+.containerAside .aside p {
   font-family: "Playfair Display", serif;
   font-weight: 300;
   font-size: x-large;
   color: rgb(95, 94, 94);
   text-align: justify;
 }
-
-.fotoaside {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  margin-right: 100px;
-  margin-top: 100px;
-}
-
-.botoninfo {
+.containerAside .aside .botoninfo {
   background-color: blueviolet;
   border: none;
   width: 200px;
@@ -206,128 +185,18 @@ hr {
   font-weight: bold;
   color: white;
 }
-
-.botoninfo:hover {
+.containerAside .aside .botoninfo:hover {
   background-color: rgba(137, 43, 226, 0.6392156863);
   transition: 1s;
   color: rgba(255, 255, 255, 0.676);
 }
-
-.botoninfo a:hover {
+.containerAside .aside .botoninfo a:hover {
   background-color: transparent;
   transition: 1s;
 }
-
-.botoninfo a:visited {
+.containerAside .aside .botoninfo a:visited {
   background-color: rgba(137, 43, 226, 0.6392156863);
   border: none;
-}
-
-.containerDiv {
-  grid-area: div;
-  background-color: #ffffff;
-  display: block;
-}
-
-.deportes {
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.crossfit {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  text-decoration: none;
-  border: none;
-  width: 200px;
-  height: 50px;
-  border-radius: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.crossfit:hover {
-  background-color: rgba(0, 0, 0, 0.511);
-  transition: 0.5s;
-}
-
-.crossfit a:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
-  transition: 0.01ms;
-}
-
-.funcional {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  text-decoration: none;
-  border: none;
-  width: 200px;
-  height: 50px;
-  border-radius: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.funcional:hover {
-  background-color: rgba(0, 0, 0, 0.511);
-  transition: 1s;
-}
-
-.funcional a:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
-  transition: 0.01ms;
-}
-
-.gimnasio {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  text-decoration: none;
-  border: none;
-  width: 200px;
-  height: 50px;
-  border-radius: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.gimnasio:hover {
-  background-color: rgba(0, 0, 0, 0.474);
-  transition: 1s;
-}
-
-.gimnasio a:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
-  transition: 0.01ms;
-}
-
-.boxeo {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  text-decoration: none;
-  border: none;
-  width: 200px;
-  height: 50px;
-  border-radius: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.boxeo:hover {
-  background-color: rgba(0, 0, 0, 0.511);
-  transition: 1s;
-}
-
-.boxeo a:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
-  transition: 0.01ms;
 }
 
 .footer {
@@ -336,17 +205,28 @@ hr {
   background-color: #000000;
   float: right;
 }
-
 .footer img {
   float: right;
   margin-right: 440px;
-} /*=======================================================*/
-/*SCSS NOSOTROS*/
-.fondoNosotros {
-  background-color: #000000;
 }
 
-.barraNosotros a {
+/*=======================================================*/
+/*SCSS NOSOTROS*/
+.bodyNosotros .fondoNosotros {
+  background-color: #000000;
+}
+.bodyNosotros .fondoNosotros .logo {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+.bodyNosotros .fondoNosotros .barraNosotros {
+  margin-left: 31rem;
+}
+.bodyNosotros .fondoNosotros .barraNosotros a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 2rem;
@@ -355,14 +235,13 @@ hr {
   font-weight: 700;
   letter-spacing: 2px;
 }
-
-.barraNosotros a:hover {
+.bodyNosotros .fondoNosotros .barraNosotros a:hover {
   background-color: rgba(255, 255, 255, 0.4352941176);
   color: white;
+  border-radius: 100px;
   transition: 1s;
 }
-
-.somos {
+.bodyNosotros .somos {
   background-image: url(../Assets/img/nosotros.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -372,18 +251,15 @@ hr {
   padding-top: 90px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.somosPRIGS {
+.bodyNosotros .divNosotros {
+  background-color: #efefef;
+}
+.bodyNosotros .divNosotros .somosPRIGS {
   font-family: "Montserrat", sans-serif;
   color: #3f3f3f;
   padding: 3rem;
 }
-
-.clearfix {
-  background-color: #efefef;
-}
-
-.prigsH2 {
+.bodyNosotros .divNosotros .somosPRIGS .prigsH2 {
   color: black;
   font-weight: bold;
   padding: 0.5rem;
@@ -399,8 +275,7 @@ hr {
   text-align: center;
   padding-top: 15px;
 }
-
-.h1Clases {
+.mainClases .h1Clases {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 4rem;
   margin-top: 70px;
@@ -412,8 +287,7 @@ hr {
   padding-bottom: 3rem;
   background-color: rgba(239, 239, 239, 0.7647058824);
 }
-
-.aCrossfit {
+.sectionClases .aCrossfit {
   text-decoration: none;
   font-size: 3rem;
   color: rgb(0, 0, 0);
@@ -421,15 +295,13 @@ hr {
   font-weight: bold;
   position: relative;
 }
-
-.aCrossfit:hover {
+.sectionClases .aCrossfit:hover {
   background-color: rgba(0, 0, 0, 0.88);
   color: #ffffff;
   transition: 0.5s;
   border-radius: 10px;
 }
-
-.aFuncional {
+.sectionClases .aFuncional {
   text-decoration: none;
   font-size: 3rem;
   color: rgb(0, 0, 0);
@@ -437,15 +309,13 @@ hr {
   font-weight: bold;
   position: relative;
 }
-
-.aFuncional:hover {
+.sectionClases .aFuncional:hover {
   background-color: rgba(0, 0, 0, 0.88);
   color: #ffffff;
   transition: 0.5s;
   border-radius: 10px;
 }
-
-.aGimnasio {
+.sectionClases .aGimnasio {
   text-decoration: none;
   font-size: 3rem;
   color: rgb(0, 0, 0);
@@ -453,15 +323,13 @@ hr {
   font-weight: bold;
   position: relative;
 }
-
-.aGimnasio:hover {
+.sectionClases .aGimnasio:hover {
   background-color: rgba(0, 0, 0, 0.88);
   color: #ffffff;
   transition: 0.5s;
   border-radius: 10px;
 }
-
-.aBoxeo {
+.sectionClases .aBoxeo {
   text-decoration: none;
   font-size: 3rem;
   color: rgb(0, 0, 0);
@@ -469,8 +337,7 @@ hr {
   font-weight: bold;
   position: relative;
 }
-
-.aBoxeo:hover {
+.sectionClases .aBoxeo:hover {
   background-color: rgba(0, 0, 0, 0.88);
   color: #ffffff;
   transition: 0.5s;
@@ -488,7 +355,6 @@ hr {
   padding-top: 95px;
   color: 5px solid black;
 }
-
 .mainHorarios h1 {
   font-size: 4rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -501,27 +367,29 @@ hr {
   width: 100%;
   height: 59vh;
 }
-
-.divHorarios {
+.sectionHorarios .divHorarios {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0 auto;
   padding: 10px;
   height: auto;
 }
-
-.form-select {
+.sectionHorarios .form-select {
   background-color: rgba(137, 43, 226, 0.81);
   color: white;
   font-size: 2rem;
   height: 100px;
   cursor: pointer;
 }
-
-.form-select:hover {
+.sectionHorarios .form-select:hover {
   background-color: rgba(255, 255, 255, 0.927);
   color: rgba(137, 43, 226, 0.81);
   border: none;
   transition: 0.5s;
+}
+.sectionHorarios .h2Gym {
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem;
 }
 
 /*=======================================================*/
@@ -533,13 +401,37 @@ hr {
   padding: 0;
   box-sizing: border-box;
 }
-
-.divContacto .form .formContacto .formH1 {
+.bodyContacto .logo {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+.bodyContacto .barraNosotros {
+  margin-left: 28rem;
+}
+.bodyContacto .barraNosotros a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  margin: auto;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.bodyContacto .barraNosotros a:hover {
+  background-color: rgba(255, 255, 255, 0.4352941176);
+  color: white;
+  border-radius: 100px;
+  transition: 1s;
+}
+.bodyContacto .divContacto .form .formContacto .formH1 {
   font-weight: normal;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-
-.divContacto .form {
+.bodyContacto .form {
   background: rgba(0, 0, 0, 0.5);
   width: 90%;
   max-width: 650px;
@@ -550,8 +442,7 @@ hr {
   border-radius: 5px;
   margin-bottom: 25px;
 }
-
-.divContacto .form .form-label {
+.bodyContacto .form .form-label {
   display: block;
   color: white;
   font-size: 1.5rem;
@@ -559,8 +450,7 @@ hr {
   position: relative;
   font-weight: bold;
 }
-
-.divContacto .form .form-input, .form-textarea {
+.bodyContacto .form .form-input, .bodyContacto .form .form-textarea {
   background: rgba(0, 0, 0, 0.7);
   border: none;
   outline: none;
@@ -573,15 +463,13 @@ hr {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.divContacto .form .form-textarea {
+.bodyContacto .form .form-textarea {
   resize: vertical;
   height: 125px;
   max-height: 150px;
   min-height: 50px;
 }
-
-.divContacto .form .btn-submit {
+.bodyContacto .form .btn-submit {
   width: 100%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
@@ -593,24 +481,20 @@ hr {
   padding: 15px 0;
   cursor: pointer;
 }
-
-.divContacto .form .btn-submit:hover {
+.bodyContacto .form .btn-submit:hover {
   background-color: rgba(255, 255, 255, 0.501);
   color: rgb(118, 25, 176);
   transition: 0.5s;
 }
-
-#nombre, #correo, #asunto {
+.bodyContacto .form #nombre, .bodyContacto .form #correo, .bodyContacto .form #asunto {
   height: 50px;
 }
-
-.formH1 {
+.bodyContacto .form .formContacto {
+  text-align: center;
+}
+.bodyContacto .form .formH1 {
   color: white;
   padding: 14px 0;
-}
-
-.formContacto {
-  text-align: center;
 }
 
 /*======================================================*/

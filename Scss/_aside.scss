@@ -3,47 +3,7 @@
     display: flex;
     height: auto;
     padding: 50px;
-    }
-    
-    .aside{
-        color: #7d7d7d;
-        background-color: #efefef;
-        margin: auto;
-    }
-    
-    .asideH3{
-        font-size: 2.5rem;
-        padding: 10px;
-        margin: auto auto;
-        font-family: 'Lato', sans-serif;
-        text-align: center;
-        font-weight: bold;
-    }
-    
-    .aside h2{
-        font-size: 3rem;
-        font-weight: bolder;
-    }
-    
-    .h2g{
-        color: #6b21b1ca;
-        font-family: 'Lato', sans-serif;
-    }
-    
-    .h2p{
-        color: #000000;
-        font-family: 'Lato', sans-serif;
-        font-weight: 500;
-    }
-    
-    .aside p{
-        font-family: 'Playfair Display', serif;
-        font-weight: 300;
-        font-size:x-large;
-        color: rgb(95, 94, 94);
-        text-align: justify;
-    }
-    
+
     .fotoaside{
         position: relative;
         width: 600px;
@@ -51,31 +11,70 @@
         margin-right: 100px;
         margin-top: 100px;
     }
-    
-    .botoninfo{
-        background-color: blueviolet;
-        border: none;
-        width: 200px;
-        height: 50px;
-        border-radius: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: white;
+
+    .aside{
+        color: #7d7d7d;
+        background-color: #efefef;
+        margin: auto;
+
+        .asideH2{
+            font-size: 2.5rem;
+            padding: 10px;
+            margin: auto auto;
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        h3{
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+
+        .h3g{
+            color: #6b21b1ca;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .h3p{
+            color: #000000;
+            font-family: 'Lato', sans-serif;
+        }
+
+        p{
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            font-size:x-large;
+            color: rgb(95, 94, 94);
+            text-align: justify;
+        }
+
+        .botoninfo{
+            background-color: blueviolet;
+            border: none;
+            width: 200px;
+            height: 50px;
+            border-radius: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+
+            &:hover{
+                background-color: #892be2a3;
+                transition: 1s;
+                color: rgba(255, 255, 255, 0.676);
+            }
+
+            a:hover{
+                background-color: transparent;
+                transition: 1s;
+            }
+
+            a:visited{
+                background-color: #892be2a3;
+                border: none;
+            }
+        }
     }
-    
-    .botoninfo:hover{
-        background-color: #892be2a3;
-        transition: 1s;
-        color: rgba(255, 255, 255, 0.676);
-    }
-    
-    .botoninfo a:hover{
-        background-color: transparent;
-        transition: 1s;
-    }
-    
-    .botoninfo a:visited{
-        background-color: #892be2a3;
-        border: none;
     }
