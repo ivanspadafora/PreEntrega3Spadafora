@@ -1,5 +1,5 @@
 .mainClases{
-    background: radial-gradient(circle, #333334, #565657, #7c7c7c, #a3a3a4, #cdcdcd), url(../Assets/img/clases.jpg);
+    background-image: url(../Assets/img/clases.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 25vh;
@@ -8,13 +8,13 @@
 
     .h1Clases{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 40rem;
+        font-size: 4rem;
         margin-top: 70px;
-        color: rgb(251, 251, 251);
+        color: rgb(255, 255, 255);
+        -webkit-text-stroke: 2px black;
     }
 }
 
 /*==================================================*/
 /*MEDIA QUERY MOBILE*/
-/*@media screen and (min-width:0px) and (max-width:540px){
-    .
+/*@media screen and (min-width:0px) and (max-width:540px)*/

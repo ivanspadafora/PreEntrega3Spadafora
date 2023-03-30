@@ -6,9 +6,30 @@
     text-align: $texto-centrado;
     padding-top: 95px;
     color: 5px solid black;
+    -webkit-text-stroke: 1px white;
 
     h1{
         font-size: 4rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+}
+
+/*==================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width:0px) and (max-width:540px){
+    .mainHorarios{
+        background-image: url(../Assets/img/horarios.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+        text-align: $texto-centrado;
+        padding-top: 95px;
+        
+    
+        h1{
+            font-size: 4rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+    }    
 }
