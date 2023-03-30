@@ -1,8 +1,8 @@
 .divMain{
     .h1Main{
         font-size: 3.6rem;
-        color: rgb(255, 255, 255);
-        text-align: center;    
+        color: $color-blanco;
+        text-align: $texto-centrado;    
         border-radius: 15px;
         padding: 10px;
         letter-spacing: 5px;
@@ -14,7 +14,7 @@
     }
     .clases{
     background-color: transparent;
-    color: rgb(255, 255, 255);
+    color: $color-blanco;
     font-family: $tipografia-general;
     margin-bottom: 50px;
     padding: 20px;
@@ -26,8 +26,22 @@
         transition: 1s;
         a:hover{
             background-color: transparent;
-            color: white;
+            color: $color-blanco;
             }
+        }
+    }
+}
+/*======================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width:0px) and (max-width:540px){
+    .divMain{ 
+        
+        .h1Main{
+        font-size: 2.2rem;
+        }
+        .clases{
+            font-size: 1.2rem;
+            text-align: $texto-centrado;
         }
     }
 }

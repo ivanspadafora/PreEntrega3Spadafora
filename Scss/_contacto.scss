@@ -8,7 +8,7 @@
         .logo{
             text-decoration: none;
             font-family: $tipografia-general;
-            color: white;
+            color: $color-blanco;
             font-size: 2rem;
             font-weight: bold;
             padding: 20px;
@@ -19,16 +19,16 @@
     
                 a{
                     text-decoration: none;
-                    color: rgb(255, 255, 255);
+                    color: $color-blanco;
                     font-size: 2rem;
-                    font-family: 'Playfair Display', serif;
+                    font-family: $tipografia-general;
                     margin: auto;
                     font-weight: 700;
                     letter-spacing: 2px;
     
                     &:hover{
                         background-color: #ffffff6f;
-                        color: white;
+                        color: $color-blanco;
                         border-radius: 100px;
                         transition: 1s;
                     }
@@ -53,7 +53,7 @@
 
             .form-label{
                 display: block;
-                color: white;
+                color: $color-blanco;
                 font-size: 1.5rem;
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 position: relative;
@@ -70,7 +70,7 @@
                 margin-bottom: 20px;
                 border-radius: 5px;
                 font-size: 14px;
-                color: white;
+                color: $color-blanco;
                 font-family: Arial, Helvetica, sans-serif
             }
 
@@ -89,7 +89,7 @@
                 background: rgb(118, 25, 176);
                 font-size: 1.25rem;
                 border: none;
-                color: white;
+                color: $color-blanco;
                 padding: 15px 0;
                 cursor: pointer;
 
@@ -105,11 +105,11 @@
             }
 
             .formContacto{
-                text-align: center;
+                text-align: $texto-centrado;
             }
 
             .formH1{
-                color: white;
+                color: $color-blanco;
                 padding: 14px 0;
             }
         }  

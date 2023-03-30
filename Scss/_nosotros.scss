@@ -5,47 +5,47 @@
     .logo{
         text-decoration: none;
         font-family: $tipografia-general;
-        color: white;
+        color: $color-blanco;
         font-size: 2rem;
         font-weight: bold;
         padding: 20px;
         }
 
-        .barraNosotros{
-            margin-left: 31rem;
+    .barraNosotros{
+        margin-left: 31rem;
 
-            a{
-                text-decoration: none;
-                color: rgb(255, 255, 255);
-                font-size: 2rem;
-                font-family: 'Playfair Display', serif;
-                margin: auto;
-                font-weight: 700;
-                letter-spacing: 2px;
+        a{
+            text-decoration: none;
+            color: $color-blanco;
+            font-size: 2rem;
+            font-family: $tipografia-general;
+            margin: auto;
+            font-weight: 700;
+            letter-spacing: 2px;
 
-                &:hover{
-                    background-color: #ffffff6f;
-                    color: white;
-                    border-radius: 100px;
-                    transition: 1s;
-                }
+            &:hover{
+                background-color: #ffffff6f;
+                color: $color-blanco;
+                border-radius: 100px;
+                transition: 1s;
             }
         }
     }
+}
 
     .somos{
         background-image: url(../Assets/img/nosotros.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 25vh;
-        color: white;
-        text-align: center;
+        color: $color-blanco;
+        text-align: $texto-centrado;
         padding-top: 90px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .divNosotros{
-        background-color: #efefef;
+        background-color: $color-primario;
 
         .somosPRIGS{
             font-family: 'Montserrat', sans-serif;
@@ -59,4 +59,27 @@
             }
         }
     }
+}
+
+/*==================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width:0px) and (max-width:540px){
+    .barraNav .barraNosotros li a{
+        text-align: $texto-centrado;
+    }
+        .sectionNosotros{
+            iframe{
+                width: 100%;
+            }
+
+            .imgNosotros{
+                width: map-get($img, width);
+                display: map-get($img, display);
+                text-align: map-get($img, $texto-centrado);
+            }
+           
+            .prigsH2{
+            font-size: 1.6rem;
+            }
+        }
 }

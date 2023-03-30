@@ -20,7 +20,7 @@ html, body {
 .fondo .logo {
   text-decoration: none;
   font-family: "Playfair Display", serif;
-  color: white;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
@@ -30,7 +30,7 @@ html, body {
   text-decoration: none;
   display: inline-flex;
   padding-left: 27.5rem;
-  color: white;
+  color: #ffffff;
   font-size: 2rem;
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -42,9 +42,23 @@ html, body {
   border-radius: 100px;
 }
 
+/*=======================================================*/
+/*MEDIA QUERY CELULAR*/
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .fondo .barraNav {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  .fondo .barraNav a {
+    padding: 5px 30px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
 .divMain .h1Main {
   font-size: 3.6rem;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-align: center;
   border-radius: 15px;
   padding: 10px;
@@ -57,7 +71,7 @@ html, body {
 }
 .divMain .clases {
   background-color: transparent;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-family: "Playfair Display", serif;
   margin-bottom: 50px;
   padding: 20px;
@@ -71,9 +85,20 @@ html, body {
 }
 .divMain .clases:hover a:hover {
   background-color: transparent;
-  color: white;
+  color: #ffffff;
 }
 
+/*======================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .divMain .h1Main {
+    font-size: 2.2rem;
+  }
+  .divMain .clases {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
 .divIndex .caja {
   display: table-cell;
   margin: 0 auto;
@@ -93,7 +118,6 @@ html, body {
   font-family: "Roboto", sans-serif;
   color: #7d7d7d;
   overflow: hidden;
-  text-align: center;
 }
 .divIndex .caja hr {
   width: 100px;
@@ -120,7 +144,6 @@ html, body {
   font-family: "Roboto", sans-serif;
   color: #7d7d7d;
   overflow: hidden;
-  text-align: center;
 }
 .divIndex .caja2 hr {
   width: 100px;
@@ -128,6 +151,21 @@ html, body {
   margin: 0 auto;
 }
 
+/*======================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .divIndex .caja, .divIndex .caja2 {
+    display: contents;
+  }
+  .divIndex .caja h2, .divIndex .caja2 h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .divIndex .caja p, .divIndex .caja2 p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 .containerAside {
   grid-area: aside;
   background-color: #efefef;
@@ -183,7 +221,7 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
 }
 .containerAside .aside .botoninfo:hover {
   background-color: rgba(137, 43, 226, 0.6392156863);
@@ -199,6 +237,28 @@ html, body {
   border: none;
 }
 
+/*==================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .containerAside .fotoaside {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .containerAside .aside .asideH2, .containerAside .aside .h3g, .containerAside .aside .h3p {
+    font-size: 2rem;
+  }
+  .containerAside .aside p {
+    font-size: 1.2rem;
+  }
+  .containerAside .aside .botoninfo {
+    width: 6rem;
+    height: 4rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 .footer {
   width: 100%;
   height: 140px;
@@ -218,7 +278,7 @@ html, body {
 .bodyNosotros .fondoNosotros .logo {
   text-decoration: none;
   font-family: "Playfair Display", serif;
-  color: white;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
@@ -228,7 +288,7 @@ html, body {
 }
 .bodyNosotros .fondoNosotros .barraNosotros a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 2rem;
   font-family: "Playfair Display", serif;
   margin: auto;
@@ -237,7 +297,7 @@ html, body {
 }
 .bodyNosotros .fondoNosotros .barraNosotros a:hover {
   background-color: rgba(255, 255, 255, 0.4352941176);
-  color: white;
+  color: #ffffff;
   border-radius: 100px;
   transition: 1s;
 }
@@ -246,7 +306,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 25vh;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding-top: 90px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -265,6 +325,29 @@ html, body {
   padding: 0.5rem;
 }
 
+/*==================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .bodyNosotros .barraNav {
+    width: 100%;
+    text-align: center;
+  }
+  .bodyNosotros .barraNav .barraNosotros li a {
+    width: 100%;
+    text-align: center;
+  }
+  .bodyNosotros .sectionNosotros iframe {
+    width: 100%;
+  }
+  .bodyNosotros .sectionNosotros .imgNosotros {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .bodyNosotros .sectionNosotros .prigsH2 {
+    font-size: 1.6rem;
+  }
+}
 /*=======================================================*/
 /*CSS CLASES*/
 .mainClases {
@@ -344,6 +427,21 @@ html, body {
   border-radius: 10px;
 }
 
+/*==================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .sectionClases .col {
+    width: 100%;
+    display: block;
+  }
+  .sectionClases .col img {
+    width: 100%;
+  }
+  .sectionClases .col .aCrossfit, .sectionClases .col .aFuncional, .sectionClases .col .aGimnasio, .sectionClases .col .aBoxeo {
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times NewRoman", serif;
+  }
+}
 /*=======================================================*/
 /*CSS HORARIOS*/
 .mainHorarios {
@@ -375,7 +473,7 @@ html, body {
 }
 .sectionHorarios .form-select {
   background-color: rgba(137, 43, 226, 0.81);
-  color: white;
+  color: #ffffff;
   font-size: 2rem;
   height: 100px;
   cursor: pointer;
@@ -404,7 +502,7 @@ html, body {
 .bodyContacto .logo {
   text-decoration: none;
   font-family: "Playfair Display", serif;
-  color: white;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: bold;
   padding: 20px;
@@ -414,7 +512,7 @@ html, body {
 }
 .bodyContacto .barraNosotros a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 2rem;
   font-family: "Playfair Display", serif;
   margin: auto;
@@ -423,7 +521,7 @@ html, body {
 }
 .bodyContacto .barraNosotros a:hover {
   background-color: rgba(255, 255, 255, 0.4352941176);
-  color: white;
+  color: #ffffff;
   border-radius: 100px;
   transition: 1s;
 }
@@ -444,7 +542,7 @@ html, body {
 }
 .bodyContacto .form .form-label {
   display: block;
-  color: white;
+  color: #ffffff;
   font-size: 1.5rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   position: relative;
@@ -460,7 +558,7 @@ html, body {
   margin-bottom: 20px;
   border-radius: 5px;
   font-size: 14px;
-  color: white;
+  color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
 .bodyContacto .form .form-textarea {
@@ -477,7 +575,7 @@ html, body {
   background: rgb(118, 25, 176);
   font-size: 1.25rem;
   border: none;
-  color: white;
+  color: #ffffff;
   padding: 15px 0;
   cursor: pointer;
 }
@@ -493,118 +591,32 @@ html, body {
   text-align: center;
 }
 .bodyContacto .form .formH1 {
-  color: white;
+  color: #ffffff;
   padding: 14px 0;
 }
 
 /*======================================================*/
 /*MEDIA QUERY CELULAR*/
-@media screen and (min-width: 0px) and (max-width: 540px) {
-  .barraNav {
-    padding: 0;
-    margin: 0;
-  }
-  .barraNav a {
-    padding: 1px;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .main h1 {
-    font-size: 2.2rem;
-  }
-  .main .clases {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  .fotoaside {
+/*iframe{
     width: 100%;
-    height: 200px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-  .containerAside {
-    width: 100%;
-    height: auto;
-  }
-  .asideH3, .h2g {
+}*/
+/*.imgNosotros{
+     width: 100%;
+     display: block;
+     text-align: center;
+}*/
+/*.prigsH2{
     font-size: 2rem;
-  }
-  .aside p {
-    font-size: 1.2rem;
-  }
-  .aside button {
-    width: 5rem;
-    height: 2.5rem;
-    margin-left: 35%;
-  }
-  .aside a {
-    font-size: 0.8rem;
-  }
-  .caja, .caja2 {
-    display: contents;
-  }
-  .caja h2 {
-    font-size: 2rem;
-  }
-  .caja2 h2 {
-    font-size: 2rem;
-  }
-  .caja p {
-    font-size: 1rem;
-  }
-  .caja2 p {
-    font-size: 1rem;
-  }
-  .caja h2, .caja2 h2 {
-    text-align: center;
-  }
-  .div .container-fluid {
-    margin: 0 auto;
-    padding: 0;
-  }
-  html, body, header, main, div, aside, footer img {
+}*/
+/*.footer{
     width: 100%;
-    height: auto;
-  }
-  .sectionClases {
-    width: auto;
-    display: block;
-  }
-  .col img {
-    width: 100%;
-  }
-  .sectionClases div {
-    width: 100%;
-    display: block;
-  }
-  .aCrossfit, .aFuncional, .aGimnasio, .aBoxeo {
-    font-size: 2rem;
-    font-family: Cambria, Cochin, Georgia, Times, "Times NewRoman", serif;
-  }
-  .sectionNosotros {
-    width: 100%;
-  }
-  iframe {
-    width: 100%;
-  }
-  .imgNosotros {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-  .prigsH2 {
-    font-size: 2rem;
-  }
-  .footer {
-    width: 100%;
-  }
-  .footer img {
+}*/
+/*.footer img{
     justify-content: space-between;
     float: right;
     padding: 5px;
     margin: auto;
-  }
-}
+}*/
 /*===============================================================*/
 /*MEDIA QUERIE TABLET*/
 @media screen and (min-width: 540px) and (max-width: 920px) {

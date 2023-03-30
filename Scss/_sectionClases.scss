@@ -4,66 +4,65 @@
     background-color: #efefefc3;
 
     .aCrossfit{
-        text-decoration: none;
-        font-size: 3rem;
-        color: rgb(0, 0, 0);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-        font-weight: bold;
-        position: relative;
+        @include clases-deportes;
 
         &:hover{
             background-color: rgba(0, 0, 0, 0.88);
-            color: #ffffff;
+            color: $color-blanco;
             transition: 0.5s;
             border-radius: 10px;
         }
     }
 
     .aFuncional{
-        text-decoration: none;
-        font-size: 3rem;
-        color: rgb(0, 0, 0);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-        font-weight: bold;
-        position: relative; 
+        @include clases-deportes;
 
         &:hover{
             background-color: rgba(0, 0, 0, 0.88);
-            color: #ffffff;
+            color: $color-blanco;
             transition: 0.5s;
             border-radius: 10px;
         }
     }
 
     .aGimnasio{
-        text-decoration: none;
-        font-size: 3rem;
-        color: rgb(0, 0, 0);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-        font-weight: bold;
-        position: relative;
+        @include clases-deportes;
 
         &:hover{
             background-color: rgba(0, 0, 0, 0.88);
-            color: #ffffff;
+            color: $color-blanco;
             transition: 0.5s;
             border-radius: 10px;
         }
     }
 
     .aBoxeo{
-        text-decoration: none;
-        font-size: 3rem;
-        color: rgb(0, 0, 0);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-        font-weight: bold;
-        position: relative;
+        @include clases-deportes;
         
         &:hover{
             background-color: rgba(0, 0, 0, 0.88);
-            color: #ffffff;
+            color: $color-blanco;
             transition: 0.5s;
             border-radius: 10px;
+        }
+    }
+}
+
+/*==================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width:0px) and (max-width:540px){
+    .sectionClases {
+        .col{
+        width: 100%;
+        display: block;
+            img{
+                width: 100%;
+            }
+            .aCrossfit, .aFuncional, .aGimnasio, .aBoxeo{
+                font-size: 2rem;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times NewRoman', serif;   
+            }
+        
         }
     }
 }

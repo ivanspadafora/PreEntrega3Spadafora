@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 25vh;
-    text-align: center;
+    text-align: $texto-centrado;
     padding-top: 15px;
 
     .h1Clases{
@@ -13,3 +13,8 @@
         color: rgb(0, 0, 0);
     }
 }
+
+/*==================================================*/
+/*MEDIA QUERY MOBILE*/
+/*@media screen and (min-width:0px) and (max-width:540px){
+    .

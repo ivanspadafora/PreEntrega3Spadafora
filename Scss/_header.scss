@@ -7,7 +7,7 @@
     .logo{
         text-decoration: none;
         font-family: $tipografia-general;
-        color: white;
+        color: rgb(202, 2, 2);
         font-size: 2rem;
         font-weight: bold;
         padding: 20px;
@@ -19,7 +19,7 @@
         text-decoration: none;
         display: inline-flex;
         padding-left: 27.5rem;
-        color: white;
+        color: $color-blanco;
         font-size: 2rem;
         font-family: $tipografia-general;
         font-weight: 700;
@@ -29,6 +29,24 @@
             background-color: #00000091;
             transition: 1s;
             border-radius: 100px;
+        }
+    }
+}
+/*=======================================================*/
+/*MEDIA QUERY CELULAR*/
+@media screen and (min-width:0px) and (max-width:540px){
+    .fondo{
+
+        .barraNav{
+        padding: 0;
+        margin: 0;
+        display: block;
+
+            a{
+            padding: 5px 30px;
+            font-size: 1.5rem;
+            text-align: $texto-centrado;
+            }
         }
     }
 }

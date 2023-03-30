@@ -6,20 +6,19 @@
         height: auto;
 
         h2{
-            color: #6b21b1ca;
+            color: $color-secundario;
             text-align: center;
             padding: 2rem 2rem 1rem;
         }
 
         p{
-            text-align: center;
+            text-align: $texto-centrado;
             font-weight: 200;
             font-size: 1rem;
             padding: 2rem;
             font-family: $tipografia-alternativa;
-            color: #7d7d7d;
+            color: $color-texto;
             overflow: hidden;
-            text-align: center;
         }
 
         hr{
@@ -30,33 +29,50 @@
     }
 
     .caja2{
-        display: table-cell;
+        @extend .caja;
         background-color: rgba(128, 128, 128, 0.243);
-        margin: 0 auto;
-        padding: 10px;
-        height: auto;
+        }
         
         h2{
-            color: #6b21b1ca;
-            text-align: center;
+            color: $color-secundario;
+            text-align: $texto-centrado;
             padding: 2rem 2rem 1rem;
         }
 
         p{
-            text-align: center;
+            text-align: $texto-centrado;
             font-weight: 200;
             font-size: 1rem;
             padding: 2rem;
             font-family: $tipografia-alternativa;
-            color: #7d7d7d;
+            color: $color-texto;
             overflow: hidden;
-            text-align: center;
         }
 
         hr{
             width: 100px;
             background-color: rgba(138, 13, 255, 0.705);
             margin: 0 auto;
+        }
+    }
+
+
+/*======================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width:0px) and (max-width:540px){
+    .divIndex{
+        .caja, .caja2{
+            display:contents;
+
+            h2{
+                font-size: 2rem;
+                text-align: $texto-centrado;
+            }
+
+            p{
+                font-size: 1rem;
+                text-align: $texto-centrado;
+            }
         }
     }
 }
