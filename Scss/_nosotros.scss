@@ -1,6 +1,6 @@
 .bodyNosotros{
     .fondoNosotros{
-    background-color: #000000;
+    background-color: #e3dada;
         
     .logo{
         text-decoration: none;
@@ -39,7 +39,7 @@
         background-size: cover;
         height: 25vh;
         color: $color-blanco;
-        text-align: $texto-centrado;
+        text-align: center;
         padding-top: 90px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
@@ -64,8 +64,10 @@
 /*==================================================*/
 /*MEDIA QUERY MOBILE*/
 @media screen and (min-width:0px) and (max-width:540px){
-    .barraNav .barraNosotros li a{
+    .bodyNosotros .barraNav .barraNosotros li a{
+        display: block;
         text-align: $texto-centrado;
+        float: left;
     }
         .sectionNosotros{
             iframe{

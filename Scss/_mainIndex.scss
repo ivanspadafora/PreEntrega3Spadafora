@@ -5,6 +5,7 @@
         text-align: $texto-centrado;    
         border-radius: 15px;
         padding: 10px;
+        animation-timing-function: ease-in-out;
         letter-spacing: 5px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         &:hover{
