@@ -5,7 +5,6 @@
         text-align: $texto-centrado;    
         border-radius: 15px;
         padding: 10px;
-        animation-timing-function: ease-in-out;
         letter-spacing: 5px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         &:hover{
@@ -32,6 +31,8 @@
         }
     }
 }
+
+
 /*======================================================*/
 /*MEDIA QUERY MOBILE*/
 @media screen and (min-width:0px) and (max-width:540px){
@@ -40,8 +41,9 @@
         .h1Main{
         font-size: 2.2rem;
         }
+    
         .clases{
-            font-size: 1.2rem;
+            font-size: 1rem;
             text-align: $texto-centrado;
         }
     }

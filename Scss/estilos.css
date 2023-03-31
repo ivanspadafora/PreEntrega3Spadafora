@@ -37,10 +37,28 @@ html, body {
   font-weight: 700;
   letter-spacing: 2px;
 }
-.divNav .barraNav a:hover {
-  background-color: rgba(0, 0, 0, 0.568627451);
-  transition: 1s;
-  border-radius: 100px;
+.divNav .barraNav a {
+  margin-block: 2px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  margin-top: 10px;
+}
+.divNav .barraNav a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.divNav .barraNav a:hover::after {
+  transform: scaleX(1);
 }
 
 /*=======================================================*/
@@ -52,7 +70,7 @@ html, body {
     display: block;
   }
   .fondo .barraNav a {
-    padding: 5px 30px;
+    padding: 1px 20px;
     font-size: 1.5rem;
     text-align: center;
   }
@@ -63,7 +81,6 @@ html, body {
   text-align: center;
   border-radius: 15px;
   padding: 10px;
-  animation-timing-function: ease-in-out;
   letter-spacing: 5px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
@@ -97,7 +114,7 @@ html, body {
     font-size: 2.2rem;
   }
   .divMain .clases {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -380,7 +397,15 @@ html, body {
 
 /*==================================================*/
 /*MEDIA QUERY MOBILE*/
-/*@media screen and (min-width:0px) and (max-width:540px)*/
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .mainClases .h1Clases {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    margin-top: 70px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 2px black;
+  }
+}
 .sectionClases {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -478,18 +503,11 @@ html, body {
 /*==================================================*/
 /*MEDIA QUERY MOBILE*/
 @media screen and (min-width: 0px) and (max-width: 540px) {
-  .mainHorarios {
-    background-image: url(../Assets/img/horarios.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 30vh;
-    text-align: center;
-    padding-top: 95px;
-  }
   .mainHorarios h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    -webkit-text-stroke: 1px black;
   }
 }
 .sectionHorarios {
