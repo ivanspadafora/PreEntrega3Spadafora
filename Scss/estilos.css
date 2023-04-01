@@ -284,6 +284,7 @@ html, body {
   font-size: 2rem;
   font-family: "Playfair Display", serif;
   margin: auto;
+  font-weight: 700;
 }
 .bodyNosotros .fondoNosotros .barraNosotros a:hover {
   background-color: rgba(255, 255, 255, 0.4352941176);
