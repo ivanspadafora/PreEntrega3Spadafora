@@ -2,36 +2,36 @@
     .fondoNosotros{
     background-color: #000000;
         
-    .logo{
-        text-decoration: none;
-        font-family: $tipografia-general;
-        color: $color-blanco;
-        font-size: 2rem;
-        font-weight: bold;
-        padding: 20px;
-        }
-
-    .barraNosotros{
-        margin-left: 31rem;
-
-        a{
+        .logo{
             text-decoration: none;
+            font-family: $tipografia-general;
             color: $color-blanco;
             font-size: 2rem;
-            font-family: $tipografia-general;
-            margin: auto;
-            font-weight: 700;
-            letter-spacing: 2px;
+            font-weight: bold;
+            padding: 20px;
+        }
 
-            &:hover{
-                background-color: #ffffff6f;
+        .barraNosotros{
+            width: 100%;
+            justify-content: space-evenly;
+
+            a{
+                text-decoration: none;
                 color: $color-blanco;
-                border-radius: 100px;
-                transition: 1s;
+                font-size: 2rem;
+                font-family: $tipografia-general;
+                margin: auto;
+                
+            
+                &:hover{
+                    background-color: #ffffff6f;
+                    color: $color-blanco;
+                    border-radius: 100px;
+                    transition: 1s;
+                }
             }
         }
     }
-}
 
     .somos{
         background-image: url(../Assets/img/nosotros.jpg);
@@ -64,19 +64,16 @@
 
 /*==================================================*/
 /*MEDIA QUERY MOBILE*/
-@media screen and (min-width:0px) and (max-width:540px){
-        .fondoNosotros{
-                
-            .barraNav{
-                position: relative;
-                .barraNosotros{
-                     position: relative;
-                    a{
-                        text-align: $texto-centrado;
-                    }
+@media screen and (min-width:0px) and (max-width:768px){
+    .fondoNosotros{
+        .barraNosotros{
+
+                a{
+                    text-align: $texto-centrado;
+                    color: white;
                 }
-            }
         }
+        
         .sectionNosotros{
             iframe{
                 width: 100%;
@@ -87,9 +84,10 @@
                 display: map-get($img, display);
                 text-align: map-get($img, $texto-centrado);
             }
-           
+            
             .prigsH2{
-            font-size: 1.6rem;
+                font-size: 1.6rem;
             }
         }
+    }
 }

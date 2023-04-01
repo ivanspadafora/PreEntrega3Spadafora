@@ -4,12 +4,7 @@
     background-color: #efefefc3;
 
     .aCrossfit{
-        text-decoration: none;
-        font-size: 3rem;
-        color: rgb(0, 0, 0);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-        font-weight: bold;
-        position: relative;
+        @include clases-deportes;
 
         &:hover{
             background-color: rgba(0, 0, 0, 0.88);
@@ -20,12 +15,7 @@
     }
 
     .aFuncional{
-        text-decoration: none;
-        font-size: 3rem;
-        color: rgb(0, 0, 0);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-        font-weight: bold;
-        position: relative;
+        @include clases-deportes;
 
         &:hover{
             background-color: rgba(0, 0, 0, 0.88);
@@ -36,12 +26,7 @@
     }
 
     .aGimnasio{
-        text-decoration: none;
-        font-size: 3rem;
-        color: rgb(0, 0, 0);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-        font-weight: bold;
-        position: relative;
+        @include clases-deportes;
 
         &:hover{
             background-color: rgba(0, 0, 0, 0.88);
@@ -52,12 +37,8 @@
     }
 
     .aBoxeo{
-        text-decoration: none;
-        font-size: 3rem;
-        color: rgb(0, 0, 0);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-        font-weight: bold;
-        position: relative;     
+        @include clases-deportes;
+        
         &:hover{
             background-color: rgba(0, 0, 0, 0.88);
             color: $color-blanco;

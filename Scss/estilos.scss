@@ -1,13 +1,13 @@
 @import "variables.scss";
+@import "mixin.scss";
 @import "reset.scss";
 @import "utilidades.scss";
-@import "mixin.scss";
 @import "body.scss";
 @import "header.scss";
 @import "mainIndex.scss";
 @import "divIndex.scss";
 @import "aside.scss";
-@import "footer.scss";
+
 
 /*=======================================================*/
 /*SCSS NOSOTROS*/
@@ -26,3 +26,5 @@
 /*=======================================================*/
 /*CSS CONTACTO*/
 @import "contacto.scss";
+
+@import "footer.scss";

@@ -63,7 +63,7 @@ html, body {
 
 /*=======================================================*/
 /*MEDIA QUERY CELULAR*/
-@media screen and (min-width: 0px) and (max-width: 540px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .fondo .barraNav {
     padding: 0;
     margin: 0;
@@ -124,12 +124,12 @@ html, body {
   padding: 10px;
   height: auto;
 }
-.divIndex .caja h2, .divIndex .caja2 h2 {
+.divIndex .caja .h2Caja, .divIndex .caja2 .h2Caja {
   color: rgba(107, 33, 177, 0.7921568627);
   text-align: center;
   padding: 2rem 2rem 1rem;
 }
-.divIndex .caja p, .divIndex .caja2 p {
+.divIndex .caja .pCaja, .divIndex .caja2 .pCaja {
   text-align: center;
   font-weight: 200;
   font-size: 1rem;
@@ -144,21 +144,7 @@ html, body {
   margin: 0 auto;
 }
 .divIndex .caja2 {
-  background-color: rgba(128, 128, 128, 0.243);
-}
-.divIndex h2 {
-  color: rgba(107, 33, 177, 0.7921568627);
-  text-align: center;
-  padding: 2rem 2rem 1rem;
-}
-.divIndex p {
-  text-align: center;
-  font-weight: 200;
-  font-size: 1rem;
-  padding: 2rem;
-  font-family: "Roboto", sans-serif;
-  color: #7d7d7d;
-  overflow: hidden;
+  background-color: #efefef;
 }
 .divIndex hr {
   width: 100px;
@@ -168,7 +154,7 @@ html, body {
 
 /*======================================================*/
 /*MEDIA QUERY MOBILE*/
-@media screen and (min-width: 0px) and (max-width: 540px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .divIndex .caja, .divIndex .caja2 {
     display: contents;
   }
@@ -255,7 +241,7 @@ html, body {
 
 /*==================================================*/
 /*MEDIA QUERY MOBILE*/
-@media screen and (min-width: 0px) and (max-width: 540px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .containerAside .fotoaside {
     width: 100%;
     height: 200px;
@@ -275,29 +261,6 @@ html, body {
     text-align: center;
   }
 }
-.footer {
-  width: 100%;
-  height: 140px;
-  background-color: #000000;
-  text-align: center;
-}
-.footer img {
-  margin: auto;
-}
-
-/*==================================================*/
-/*MEDIA QUERY MOBILE*/
-@media screen and (min-width: 0px) and (max-width: 540px) {
-  .footer {
-    width: 100%;
-  }
-  .footer img {
-    justify-content: space-between;
-    float: right;
-    padding: 5px;
-    margin: auto;
-  }
-}
 /*=======================================================*/
 /*SCSS NOSOTROS*/
 .bodyNosotros .fondoNosotros {
@@ -312,7 +275,8 @@ html, body {
   padding: 20px;
 }
 .bodyNosotros .fondoNosotros .barraNosotros {
-  margin-left: 31rem;
+  width: 100%;
+  justify-content: space-evenly;
 }
 .bodyNosotros .fondoNosotros .barraNosotros a {
   text-decoration: none;
@@ -320,8 +284,6 @@ html, body {
   font-size: 2rem;
   font-family: "Playfair Display", serif;
   margin: auto;
-  font-weight: 700;
-  letter-spacing: 2px;
 }
 .bodyNosotros .fondoNosotros .barraNosotros a:hover {
   background-color: rgba(255, 255, 255, 0.4352941176);
@@ -356,24 +318,19 @@ html, body {
 
 /*==================================================*/
 /*MEDIA QUERY MOBILE*/
-@media screen and (min-width: 0px) and (max-width: 540px) {
-  .fondoNosotros .barraNav {
-    position: relative;
-  }
-  .fondoNosotros .barraNav .barraNosotros {
-    position: relative;
-  }
-  .fondoNosotros .barraNav .barraNosotros a {
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .fondoNosotros .barraNosotros a {
     text-align: center;
+    color: white;
   }
-  .sectionNosotros iframe {
+  .fondoNosotros .sectionNosotros iframe {
     width: 100%;
   }
-  .sectionNosotros .imgNosotros {
+  .fondoNosotros .sectionNosotros .imgNosotros {
     width: 100%;
     display: block;
   }
-  .sectionNosotros .prigsH2 {
+  .fondoNosotros .sectionNosotros .prigsH2 {
     font-size: 1.6rem;
   }
 }
@@ -417,7 +374,6 @@ html, body {
   color: rgb(0, 0, 0);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
-  position: relative;
 }
 .sectionClases .aCrossfit:hover {
   background-color: rgba(0, 0, 0, 0.88);
@@ -431,7 +387,6 @@ html, body {
   color: rgb(0, 0, 0);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
-  position: relative;
 }
 .sectionClases .aFuncional:hover {
   background-color: rgba(0, 0, 0, 0.88);
@@ -445,7 +400,6 @@ html, body {
   color: rgb(0, 0, 0);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
-  position: relative;
 }
 .sectionClases .aGimnasio:hover {
   background-color: rgba(0, 0, 0, 0.88);
@@ -459,7 +413,6 @@ html, body {
   color: rgb(0, 0, 0);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
-  position: relative;
 }
 .sectionClases .aBoxeo:hover {
   background-color: rgba(0, 0, 0, 0.88);
@@ -502,7 +455,7 @@ html, body {
 
 /*==================================================*/
 /*MEDIA QUERY MOBILE*/
-@media screen and (min-width: 0px) and (max-width: 540px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .mainHorarios h1 {
     font-size: 3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -673,7 +626,7 @@ html, body {
 
 /*==================================================*/
 /*MEDIA QUERY MOBILE*/
-@media screen and (min-width: 0px) and (max-width: 540px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   .bodyContacto {
     background-image: url(../Assets/img/headermain.jpg);
     width: 100%;
@@ -767,5 +720,28 @@ html, body {
   .bodyContacto .form .formH1 {
     color: #ffffff;
     padding: 14px 0;
+  }
+}
+.footer {
+  width: 100%;
+  height: 140px;
+  background-color: #000000;
+  text-align: center;
+}
+.footer img {
+  margin: auto;
+}
+
+/*==================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width: 0px) and (max-width: 540px) {
+  .footer {
+    width: 100%;
+  }
+  .footer img {
+    justify-content: space-between;
+    float: right;
+    padding: 5px;
+    margin: auto;
   }
 }/*# sourceMappingURL=estilos.css.map */

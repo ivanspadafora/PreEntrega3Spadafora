@@ -5,13 +5,13 @@
         padding: 10px;
         height: auto;
 
-        h2{
+        .h2Caja{
             color: $color-secundario;
             text-align: center;
             padding: 2rem 2rem 1rem;
         }
 
-        p{
+        .pCaja{
             text-align: $texto-centrado;
             font-weight: 200;
             font-size: 1rem;
@@ -30,36 +30,29 @@
 
     .caja2{
         @extend .caja;
-        background-color: rgba(128, 128, 128, 0.243);
+        background-color: #efefef;        
         }
-        
-        h2{
-            color: $color-secundario;
-            text-align: $texto-centrado;
-            padding: 2rem 2rem 1rem;
-        }
+            .h2Caja{
+                @extend .h2Caja;
+            }
 
-        p{
-            text-align: $texto-centrado;
-            font-weight: 200;
-            font-size: 1rem;
-            padding: 2rem;
-            font-family: $tipografia-alternativa;
-            color: $color-texto;
-            overflow: hidden;
-        }
+            .pCaja{
+                @extend .pCaja;
+            }
 
-        hr{
-            width: 100px;
-            background-color: rgba(138, 13, 255, 0.705);
-            margin: 0 auto;
-        }
+            hr{
+                width: 100px;
+                background-color: rgba(138, 13, 255, 0.705);
+                margin: 0 auto;
+            }
     }
+
+
 
 
 /*======================================================*/
 /*MEDIA QUERY MOBILE*/
-@media screen and (min-width:0px) and (max-width:540px){
+@media screen and (min-width:0px) and (max-width:768px){
     .divIndex{
         .caja, .caja2{
             display:contents;
