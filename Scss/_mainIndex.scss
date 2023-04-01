@@ -7,11 +7,13 @@
         padding: 10px;
         letter-spacing: 5px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
         &:hover{
             background-color: rgba(0, 0, 0, 0.759);
             transition: 2s;
         }
     }
+
     .clases{
     background-color: transparent;
     color: $color-blanco;
@@ -21,12 +23,14 @@
     font-size: 2rem;
     transition: 0.5s;
     cursor: pointer;
-    &:hover{
-        background-color: rgba(0, 0, 0, 0.754);
-        transition: 1s;
-        a:hover{
-            background-color: transparent;
-            color: $color-blanco;
+
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.754);
+            transition: 1s;
+
+            a:hover{
+                background-color: transparent;
+                color: $color-blanco;
             }
         }
     }
@@ -35,9 +39,8 @@
 
 /*======================================================*/
 /*MEDIA QUERY MOBILE*/
-@media screen and (min-width:0px) and (max-width:540px){
+@media screen and (min-width:0px) and (max-width:768px){
     .divMain{ 
-        
         .h1Main{
         font-size: 2.2rem;
         }

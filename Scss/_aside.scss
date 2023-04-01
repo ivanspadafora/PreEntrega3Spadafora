@@ -94,18 +94,18 @@
         .aside{ 
             .asideH2, .h3g, .h3p{
             font-size: 2rem;
-        }
+            }
         
-        p{
-            font-size: 1.2rem;
-        }
+            p{
+                font-size: 1.2rem;
+            }
 
-        .botoninfo{
-            width: 6rem;
-            height: 4rem;
-            font-size: 1rem;
-            text-align: $texto-centrado;
+            .botoninfo{
+                width: 6rem;
+                height: 4rem;
+                font-size: 1rem;
+                text-align: $texto-centrado;
+            }
         }
     }
-}
 }

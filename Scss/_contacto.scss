@@ -5,6 +5,132 @@
     padding: 0;
     box-sizing: border-box;
             
+    .logo{
+        text-decoration: none;
+        font-family: $tipografia-general;
+        color: $color-blanco;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 20px;
+    }
+
+    .barraNosotros{
+        text-decoration: none;
+        display: inline-flex;
+        padding-left: 27.5rem;
+        color: $color-blanco;
+        font-size: 2rem;
+        font-family: $tipografia-general;
+        font-weight: 700;
+        letter-spacing: 2px;
+        
+        a{
+            text-decoration: none;
+            color: $color-blanco;
+            font-size: 2rem;
+            font-family: $tipografia-general;
+            margin: auto;
+            
+            &:hover{
+                background-color: #ffffff6f;
+                color: $color-blanco;
+                border-radius: 100px;
+                transition: 1s;
+            }
+        }
+    }
+
+
+    .divContacto .form .formContacto .formH1{
+        font-weight: normal;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .formH1::first-letter{
+        font-size: 5rem; 
+            font-weight: bold; 
+            color: rgb(158, 1, 255);
+    }
+
+    .form{
+        background: rgba(0, 0, 0, 0.5);
+        width: 90%;
+        max-width: 650px;
+        margin: auto;
+        padding: 5px 35px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 5px;
+        margin-bottom: 25px;
+
+        .form-label{
+            display: block;
+            color: $color-blanco;
+            font-size: 1.5rem;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .form-input, .form-textarea{
+            background: rgba(0,0,0,.70);
+            border: none;
+            outline: none;
+            border-bottom: 2px solid rgb(118, 25, 176);
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: $color-blanco;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .form-textarea{
+            resize: vertical;
+            height: 125px;
+            max-height: 150px;
+            min-height: 50px;
+        }
+
+        .btn-submit{
+            width: 100%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            outline: none;
+            background: rgb(118, 25, 176);
+            font-size: 1.25rem;
+            border: none;
+            color: $color-blanco;
+            padding: 15px 0;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.501);
+                color: rgb(118, 25, 176);
+                transition: 0.5s;
+            }
+        }
+
+        #nombre, #correo, #asunto{
+            height: 50px;
+        }
+
+        .formContacto{
+            text-align: $texto-centrado;
+        }
+
+        .formH1{
+            color: $color-blanco;
+            padding: 14px 0;
+        }
+    }  
+}
+
+
+/*==================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width:0px) and (max-width:768px){  
+    .bodyContacto{
         .logo{
             text-decoration: none;
             font-family: $tipografia-general;
@@ -12,34 +138,26 @@
             font-size: 2rem;
             font-weight: bold;
             padding: 20px;
+        }
+            
+        .barraNosotros{
+            padding-left: 0;
+            margin: 0;
+            display: block;
+            
+            a{
+                padding: 1px 20px;
+                font-size: 1.5rem;
+                text-align: $texto-centrado;
             }
-    
-            .barraNosotros{
-                margin-left: 28rem;
-    
-                a{
-                    text-decoration: none;
-                    color: $color-blanco;
-                    font-size: 2rem;
-                    font-family: $tipografia-general;
-                    margin: auto;
-                    font-weight: 700;
-                    letter-spacing: 2px;
-    
-                    &:hover{
-                        background-color: #ffffff6f;
-                        color: $color-blanco;
-                        border-radius: 100px;
-                        transition: 1s;
-                    }
-                }
-            }
-
+        }
+        
         .divContacto .form .formContacto .formH1{
             font-weight: normal;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.8rem;
         }
-
+        
         .form{
             background: rgba(0, 0, 0, 0.5);
             width: 90%;
@@ -50,16 +168,16 @@
             padding-bottom: 30px;
             border-radius: 5px;
             margin-bottom: 25px;
-
+        
             .form-label{
                 display: block;
                 color: $color-blanco;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 position: relative;
                 font-weight: bold;
             }
-
+        
             .form-input, .form-textarea{
                 background: rgba(0,0,0,.70);
                 border: none;
@@ -73,157 +191,45 @@
                 color: $color-blanco;
                 font-family: Arial, Helvetica, sans-serif
             }
-
+        
             .form-textarea{
                 resize: vertical;
                 height: 125px;
                 max-height: 150px;
                 min-height: 50px;
             }
-
+        
             .btn-submit{
                 width: 100%;
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-weight: bold;
                 outline: none;
                 background: rgb(118, 25, 176);
-                font-size: 1.25rem;
+                font-size: 1rem;
                 border: none;
                 color: $color-blanco;
                 padding: 15px 0;
                 cursor: pointer;
-
+        
                 &:hover{
                     background-color: rgba(255, 255, 255, 0.501);
                     color: rgb(118, 25, 176);
                     transition: 0.5s;
                 }
             }
-
+        
             #nombre, #correo, #asunto{
                 height: 50px;
             }
-
+        
             .formContacto{
                 text-align: $texto-centrado;
             }
-
+        
             .formH1{
                 color: $color-blanco;
                 padding: 14px 0;
             }
         }  
-}
-
-
-/*==================================================*/
-/*MEDIA QUERY MOBILE*/
-@media screen and (min-width:0px) and (max-width:768px){
-    .bodyContacto{
-        background-image: url(../Assets/img/headermain.jpg);
-        width: 100%;
-        background-size: cover;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-                
-            .logo{
-                text-decoration: none;
-                font-family: $tipografia-general;
-                color: $color-blanco;
-                font-size: 1.5rem;
-                font-weight: bold;
-                padding: 20px;
-                }
-        
-                .barraNosotros{
-                    position: relative;
-        
-                    a{
-                        text-align: center;
-                        font-size: 1.5rem;
-                        margin-right: 5rem;
-                    }
-                }
-    
-            .divContacto .form .formContacto .formH1{
-                font-weight: normal;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                font-size: 1.8rem;
-            }
-    
-            .form{
-                background: rgba(0, 0, 0, 0.5);
-                width: 90%;
-                max-width: 650px;
-                margin: auto;
-                padding: 5px 35px;
-                margin-top: 30px;
-                padding-bottom: 30px;
-                border-radius: 5px;
-                margin-bottom: 25px;
-    
-                .form-label{
-                    display: block;
-                    color: $color-blanco;
-                    font-size: 1.2rem;
-                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    position: relative;
-                    font-weight: bold;
-                }
-    
-                .form-input, .form-textarea{
-                    background: rgba(0,0,0,.70);
-                    border: none;
-                    outline: none;
-                    border-bottom: 2px solid rgb(118, 25, 176);
-                    width: 100%;
-                    padding: 12px;
-                    margin-bottom: 20px;
-                    border-radius: 5px;
-                    font-size: 14px;
-                    color: $color-blanco;
-                    font-family: Arial, Helvetica, sans-serif
-                }
-    
-                .form-textarea{
-                    resize: vertical;
-                    height: 125px;
-                    max-height: 150px;
-                    min-height: 50px;
-                }
-    
-                .btn-submit{
-                    width: 100%;
-                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    font-weight: bold;
-                    outline: none;
-                    background: rgb(118, 25, 176);
-                    font-size: 1rem;
-                    border: none;
-                    color: $color-blanco;
-                    padding: 15px 0;
-                    cursor: pointer;
-    
-                    &:hover{
-                        background-color: rgba(255, 255, 255, 0.501);
-                        color: rgb(118, 25, 176);
-                        transition: 0.5s;
-                    }
-                }
-    
-                #nombre, #correo, #asunto{
-                    height: 50px;
-                }
-    
-                .formContacto{
-                    text-align: $texto-centrado;
-                }
-    
-                .formH1{
-                    color: $color-blanco;
-                    padding: 14px 0;
-                }
-            }  
     }
 }

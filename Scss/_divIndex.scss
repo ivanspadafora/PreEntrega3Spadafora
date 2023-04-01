@@ -31,21 +31,22 @@
     .caja2{
         @extend .caja;
         background-color: #efefef;        
+    
+        .h2Caja{
+            @extend .h2Caja;
         }
-            .h2Caja{
-                @extend .h2Caja;
-            }
 
-            .pCaja{
-                @extend .pCaja;
-            }
+        .pCaja{
+            @extend .pCaja;
+        }
 
-            hr{
-                width: 100px;
-                background-color: rgba(138, 13, 255, 0.705);
-                margin: 0 auto;
-            }
+        hr{
+            width: 100px;
+            background-color: rgba(138, 13, 255, 0.705);
+            margin: 0 auto;
+        }
     }
+}
 
 
 

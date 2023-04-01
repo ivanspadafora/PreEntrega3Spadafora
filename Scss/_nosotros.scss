@@ -1,6 +1,7 @@
 .bodyNosotros{
     .fondoNosotros{
     background-color: #000000;
+    width: 100%;
         
         .logo{
             text-decoration: none;
@@ -12,9 +13,8 @@
         }
 
         .barraNosotros{
-            width: 100%;
             justify-content: space-evenly;
-
+            
             a{
                 text-decoration: none;
                 color: $color-blanco;
@@ -22,7 +22,6 @@
                 font-family: $tipografia-general;
                 margin: auto;
                 
-            
                 &:hover{
                     background-color: #ffffff6f;
                     color: $color-blanco;
@@ -45,8 +44,21 @@
         -webkit-text-stroke: 1px black;
     }
 
-    .divNosotros{
+    .sectionNosotros{
         background-color: $color-primario;
+
+        .col{
+            padding-top: 1rem;
+            text-align: center;
+
+            iframe{
+                text-align: center;
+            }
+        }
+
+        .imgNosotros{
+            width: auto;
+        }
 
         .somosPRIGS{
             font-family: 'Montserrat', sans-serif;
@@ -58,6 +70,26 @@
                 font-weight: bold;
                 padding: 0.5rem;
             }
+
+            .prigsH3{
+                color: black;
+                font-weight: bold;
+                padding: 0.5rem;
+                display: inline-block; 
+                padding-left: 0.5rem;                
+            }
+            
+            .pNosotros{
+                text-align: justify;
+            }
+
+            .check{
+                width: 2rem;
+            }
+        }
+
+        .youtube{
+            text-align: center;
         }
     }
 }
@@ -67,27 +99,58 @@
 @media screen and (min-width:0px) and (max-width:768px){
     .fondoNosotros{
         .barraNosotros{
-
-                a{
-                    text-align: $texto-centrado;
-                    color: white;
-                }
+            a{
+                text-align: $texto-centrado;
+                color: white;
+            }
         }
-        
-        .sectionNosotros{
-            iframe{
+    }
+
+    .sectionNosotros{
+        .divNosotros{
+            .col{
                 width: 100%;
+                    
+                iframe{
+                    width: 100%;
+                }
             }
 
-            .imgNosotros{
-                width: map-get($img, width);
-                display: map-get($img, display);
-                text-align: map-get($img, $texto-centrado);
+            .somosPRIGS{
+                .col{
+                    width: 100%;
+
+                    .imgNosotros{
+                        width: map-get($img, width);
+                        display: map-get($img, display);
+                        text-align: map-get($img, $texto-centrado);
+                    }
+                }
+                
+                .prigsH2{
+                    font-size: 1.6rem;
+                    text-align: center;
+                }
+
+                .prigsH3{
+                    text-align: center;
+                }
+
+                .pNosotros{
+                    text-align: justify;
+                }
+
+                .check{
+                    width: 2rem;
+                }
             }
             
-            .prigsH2{
-                font-size: 1.6rem;
-            }
+            .youtube{
+                width: 100%;
+                iframe{
+                    width: 100%;
+                }
+            }   
         }
     }
 }
