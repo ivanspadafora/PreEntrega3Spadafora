@@ -97,12 +97,33 @@
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-weight: bold;
             outline: none;
+            background: #7619b0;
+            font-size: 1.25rem;
+            border: none;
+            color: $color-blanco;
+            padding: 15px 0;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.501);
+                color: rgb(118, 25, 176);
+                transition: 0.5s;
+            }
+        }
+        
+        .btn-reset{
+            width: 50%;
+            margin-left: 25%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            outline: none;
             background: rgb(118, 25, 176);
             font-size: 1.25rem;
             border: none;
             color: $color-blanco;
             padding: 15px 0;
             cursor: pointer;
+            margin-top: 10px;
 
             &:hover{
                 background-color: rgba(255, 255, 255, 0.501);
@@ -201,6 +222,24 @@
         
             .btn-submit{
                 width: 100%;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                outline: none;
+                background: rgb(118, 25, 176);
+                font-size: 1rem;
+                border: none;
+                color: $color-blanco;
+                padding: 15px 0;
+                cursor: pointer;
+        
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.501);
+                    color: rgb(118, 25, 176);
+                    transition: 0.5s;
+                }
+            }
+
+            .btn-reset{
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-weight: bold;
                 outline: none;

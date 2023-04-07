@@ -668,7 +668,7 @@ html, body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
   outline: none;
-  background: rgb(118, 25, 176);
+  background: #7619b0;
   font-size: 1.25rem;
   border: none;
   color: #ffffff;
@@ -676,6 +676,25 @@ html, body {
   cursor: pointer;
 }
 .bodyContacto .form .btn-submit:hover {
+  background-color: rgba(255, 255, 255, 0.501);
+  color: rgb(118, 25, 176);
+  transition: 0.5s;
+}
+.bodyContacto .form .btn-reset {
+  width: 50%;
+  margin-left: 25%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  outline: none;
+  background: rgb(118, 25, 176);
+  font-size: 1.25rem;
+  border: none;
+  color: #ffffff;
+  padding: 15px 0;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.bodyContacto .form .btn-reset:hover {
   background-color: rgba(255, 255, 255, 0.501);
   color: rgb(118, 25, 176);
   transition: 0.5s;
@@ -772,6 +791,22 @@ html, body {
     color: rgb(118, 25, 176);
     transition: 0.5s;
   }
+  .bodyContacto .form .btn-reset {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    outline: none;
+    background: rgb(118, 25, 176);
+    font-size: 1rem;
+    border: none;
+    color: #ffffff;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  .bodyContacto .form .btn-reset:hover {
+    background-color: rgba(255, 255, 255, 0.501);
+    color: rgb(118, 25, 176);
+    transition: 0.5s;
+  }
   .bodyContacto .form #nombre, .bodyContacto .form #correo, .bodyContacto .form #asunto {
     height: 50px;
   }
@@ -817,5 +852,89 @@ html, body {
     justify-content: space-between;
     float: right;
     margin: auto;
+  }
+}
+/*=======================================================*/
+/*CSS 404*/
+.bodyNosotros .fondoNosotros {
+  background-color: #000000;
+  width: 100%;
+}
+.bodyNosotros .fondoNosotros .logo {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+.bodyNosotros .fondoNosotros .barraNosotros {
+  justify-content: space-evenly;
+}
+.bodyNosotros .fondoNosotros .barraNosotros a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  margin: auto;
+  font-weight: 700;
+}
+.bodyNosotros .fondoNosotros .barraNosotros a:hover {
+  background-color: rgba(255, 255, 255, 0.4352941176);
+  color: #ffffff;
+  border-radius: 100px;
+  transition: 1s;
+}
+.bodyNosotros .main404 {
+  background-image: url(../Assets/img/404.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.bodyNosotros .main404 .h1404 {
+  text-align: center;
+  padding-top: 25%;
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+}
+.bodyNosotros .main404 .p404 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.bodyNosotros .main404 .botoninfo {
+  background-color: blueviolet;
+  border: none;
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 15px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.bodyNosotros .main404 .botoninfo:hover {
+  background-color: rgba(137, 43, 226, 0.6392156863);
+  transition: 1s;
+  color: rgba(255, 255, 255, 0.676);
+}
+.bodyNosotros .main404 .botoninfo a:hover {
+  background-color: transparent;
+  transition: 1s;
+}
+.bodyNosotros .main404 .botoninfo a:visited {
+  background-color: rgba(137, 43, 226, 0.6392156863);
+  border: none;
+}
+
+/*==================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .fondoNosotros .barraNosotros a {
+    text-align: center;
+    color: white;
   }
 }/*# sourceMappingURL=estilos.css.map */

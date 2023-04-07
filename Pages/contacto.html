@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contáctanos para consultarnos lo que necesites.">
     <meta name="keywords" content="entrenamiento, entrenar, gym, gimnasio, crossfit, dieta, funcional, boxeo, fit, fitness,clases">
     <title>Contacto | PRIGS</title>
@@ -56,23 +56,25 @@
     <!--FORMULARIO DE CONTACTO-->
 
     <div class="divContacto">
-        <form action="" class="form">
+        <form action="404.html" class="form">
             <div class="formContacto">
                 <h1 class="formH1">CONTÁCTANOS</h1>
             </div>
             <label for="nombre" class="form-label">Nombre:</label>
-            <input type="text" id="nombre" class="form-input" placeholder="Nombre">
+            <input type="text" id="nombre" class="form-input" placeholder="Nombre" required>
 
             <label for="correo" class="form-label">Email:</label>
-            <input type="email" id="correo" class="form-input" placeholder="Email">
+            <input type="email" id="correo" class="form-input" placeholder="Email" required>
 
             <label for="asunto" class="form-label">Asunto:</label>
-            <input type="text" id="asunto" class="form-input" placeholder="Asunto">
+            <input type="text" id="asunto" class="form-input" placeholder="Asunto" required>
 
             <label for="mensaje" class="form-label">Mensaje:</label>
-            <textarea id="mensaje" class="form-textarea" placeholder="Mensaje"></textarea>
+            <textarea id="mensaje" class="form-textarea" placeholder="Mensaje" required></textarea>
 
             <input type="submit" class="btn-submit" value="ENVIAR MENSAJE">
+            <input type="reset" class="btn-reset" value="LIMPIAR">
+            
         </form>
     </div>
     

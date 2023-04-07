@@ -1,7 +1,7 @@
 {
   "name": "clear",
   "version": "1.0.0",
-  "description": "",
+  "description": "PreEntrega 3 de Iván Giuliano Spadafora.\r Paso a detallar dónde apliqué Sass y Animaciones:\r Los @mixin se encuentran en el archivo \"_sectionClases\"\r Los @extend se encuentran en el archivo \"_divIndex\"\r Los mapas se encuentran en el archivo \"_nosotros\" en la MediaQuery de la clase \".imgNosotros\"\r Y las animaciones se encuentran en el Index y en la página Horarios.\r Solucioné los problemas de \"style\".\r Creé una nueva rama en la que hice la PreEntrega y a través de Settings adapté todo a GitHub Pages.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

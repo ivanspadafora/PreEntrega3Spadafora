@@ -1,0 +1,98 @@
+.bodyNosotros{
+    .fondoNosotros{
+    background-color: #000000;
+    width: 100%;
+        
+        .logo{
+            text-decoration: none;
+            font-family: $tipografia-general;
+            color: $color-blanco;
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .barraNosotros{
+            justify-content: space-evenly;
+            
+            a{
+                text-decoration: none;
+                color: $color-blanco;
+                font-size: 2rem;
+                font-family: $tipografia-general;
+                margin: auto;
+                font-weight: 700;
+                
+                &:hover{
+                    background-color: #ffffff6f;
+                    color: $color-blanco;
+                    border-radius: 100px;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+
+    .main404{
+        background-image: url(../Assets/img/404.png);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+
+        .h1404{
+            text-align: $texto-centrado;
+            padding-top: 25%;
+            font-size: 3rem;
+            font-family: $tipografia-general;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .p404{
+            text-align: $texto-centrado;
+            font-size: 2rem;
+            font-family: $tipografia-alternativa;
+        }
+        
+        .botoninfo{
+            background-color: blueviolet;
+            border: none;
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 15px;
+            font-family: $tipografia-general;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $color-blanco;
+
+            &:hover{
+                background-color: #892be2a3;
+                transition: 1s;
+                color: rgba(255, 255, 255, 0.676);
+            }
+
+            a:hover{
+                background-color: transparent;
+                transition: 1s;
+            }
+
+            a:visited{
+                background-color: #892be2a3;
+                border: none;
+            }
+        }
+    }
+}
+
+/*==================================================*/
+/*MEDIA QUERY MOBILE*/
+@media screen and (min-width:0px) and (max-width:768px){
+    .fondoNosotros{
+        .barraNosotros{
+            a{
+                text-align: $texto-centrado;
+                color: white;
+            }
+        }
+    }
+}
