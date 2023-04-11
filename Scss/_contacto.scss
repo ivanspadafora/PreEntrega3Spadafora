@@ -106,7 +106,7 @@
             cursor: pointer;
 
             &:hover{
-                background-color: rgba(255, 255, 255, 0.501);
+                background-color: rgb(255, 255, 255);
                 color: rgb(118, 25, 176);
                 transition: 0.5s;
             }
@@ -127,8 +127,8 @@
             margin-top: 10px;
 
             &:hover{
-                background-color: rgba(255, 255, 255, 0.501);
-                color: rgb(118, 25, 176);
+                background-color: rgb(255, 0, 0);
+                color: rgb(255, 255, 255);
                 transition: 0.5s;
             }
         }

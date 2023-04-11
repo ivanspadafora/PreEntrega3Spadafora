@@ -41,21 +41,11 @@ html, body {
   position: relative;
   margin-top: 10px;
 }
-.headerNav .divNav .barraNav a::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
-  border-radius: 4px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.25s ease;
-}
-.headerNav .divNav .barraNav a:hover::after {
-  transform: scaleX(1);
+.headerNav .divNav .barraNav a:hover {
+  background-color: rgba(255, 255, 255, 0.4352941176);
+  color: #ffffff;
+  border-radius: 100px;
+  transition: 1s;
 }
 
 /*=======================================================*/
@@ -70,6 +60,7 @@ html, body {
     padding: 1px 20px;
     font-size: 1.5rem;
     text-align: center;
+    text-decoration: none;
   }
 }
 .fondo {
@@ -307,6 +298,9 @@ html, body {
 }
 .bodyNosotros .sectionNosotros {
   background-color: #efefef;
+}
+.bodyNosotros .sectionNosotros .direcNosotros {
+  font-family: "Roboto", sans-serif;
 }
 .bodyNosotros .sectionNosotros .col {
   padding-top: 1rem;
@@ -677,7 +671,7 @@ html, body {
   cursor: pointer;
 }
 .divContacto .form .btn-submit:hover {
-  background-color: rgba(255, 255, 255, 0.501);
+  background-color: rgb(255, 255, 255);
   color: rgb(118, 25, 176);
   transition: 0.5s;
 }
@@ -696,8 +690,8 @@ html, body {
   margin-top: 10px;
 }
 .divContacto .form .btn-reset:hover {
-  background-color: rgba(255, 255, 255, 0.501);
-  color: rgb(118, 25, 176);
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   transition: 0.5s;
 }
 .divContacto .form #nombre, .divContacto .form #correo, .divContacto .form #asunto {
@@ -827,24 +821,44 @@ html, body {
 }
 .footer {
   width: 100%;
-  height: 140px;
+  height: 150px;
   background-color: #000000;
+  padding-top: 10px;
+  line-height: 15px;
+  font-size: 0.8rem;
+}
+.footer .btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
   text-align: center;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.footer .btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+}
+.footer .redes {
+  text-align: center;
+  padding: 10px;
 }
 .footer .copy {
   color: #ffffff;
-  font-size: 3rem;
-  font-weight: bold;
-  font-family: "Playfair Display", serif;
 }
-.footer .prigs {
-  color: white;
-  font-size: 2rem;
-  font-family: "Playfair Display", serif;
+.footer .prigsFooter {
+  text-decoration: none;
+  color: #ffffff;
 }
-.footer .ig .linkedin .fb {
-  margin: auto;
-  text-align: center;
+.footer .prigsFooter:hover {
+  text-decoration: underline;
 }
 
 /*==================================================*/
@@ -855,10 +869,12 @@ html, body {
     height: 9rem;
     text-align: center;
   }
-  .footer .ig .linkedin .fb {
-    justify-content: space-between;
-    float: right;
-    margin: auto;
+  .footer .btn-wsp .whatsapp {
+    width: 30px;
+    height: 20px;
+  }
+  .footer .whatsapp {
+    padding-left: 5px;
   }
 }
 /*=======================================================*/

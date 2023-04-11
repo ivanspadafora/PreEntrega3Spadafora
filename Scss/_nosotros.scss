@@ -48,6 +48,9 @@
     .sectionNosotros{
         background-color: $color-primario;
 
+        .direcNosotros{
+            font-family: $tipografia-alternativa;
+        }
         .col{
             padding-top: 1rem;
             text-align: center;
