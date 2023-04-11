@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 59vh;
+    height: 100vh;
 
     .divHorarios{
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -11,30 +11,24 @@
         padding: 10px;
         height: auto;
     }
+     .tablaHorarios{
+        width: 100%;
+        height: 500px;
 
-    .formHorarios{
-        background-color: rgba(137, 43, 226, 0.81);
-        color: $color-blanco;
-        font-size: 2rem;
-        height: 100px;
-        cursor: pointer;
-        font-weight: bold;
-
-        &:hover{
-            background-color: rgba(255, 255, 255, 0.927);
-            color: rgba(137, 43, 226, 0.81);
-            border: none;
-            transition: 0.5s;
+        .dias{
+            color: rgb(177, 96, 253);
         }
-    }
 
+        .horarios{
+            font-size: 1.1rem;
+        }
+     }
 
     .aviso{
         text-align: center;
-        margin-top: 300px;
 
         .h2Gym{
-            display: inline-block;
+            display: block;
             color: $color-blanco;
             font-weight: bold;
             padding: 0.5rem;
@@ -48,30 +42,15 @@
     .sectionHorarios{
     
         .divHorarios{
-            flex-direction: column;
+            display: block;
         
-            .formHorarios{
-                width: 100%;
-                font-size: 1rem;
-                height: 60px;
-        
-                &:hover{
-                    background-color: rgba(255, 255, 255, 0.927);
-                    color: rgba(137, 43, 226, 0.81);
-                    border: none;
-                    transition: 0.5s;
-                }
-
-                .opHorarios{
-                    margin: 0 auto;
-                    width: 100%;
-                    overflow: hidden;
-                }
+            .tablaHorarios{
+                width: 100%;                
             }
         }
 
         .h2Gym{
-            position: fixed;
+            font-size: 1.2rem;
         }
     }
 }
