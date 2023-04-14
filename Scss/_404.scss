@@ -15,7 +15,7 @@
         .barraNosotros{
             justify-content: space-evenly;
             
-            a{
+            li a{
                 text-decoration: none;
                 color: $color-blanco;
                 font-size: 2rem;
@@ -24,9 +24,8 @@
                 font-weight: 700;
                 
                 &:hover{
-                    background-color: #ffffff6f;
-                    color: $color-blanco;
-                    border-radius: 100px;
+                    background-color: $color-blanco;
+                    color: #000;
                     transition: 1s;
                 }
             }

@@ -34,17 +34,16 @@ html, body {
   font-family: "Playfair Display", serif;
   font-weight: 700;
 }
-.headerNav .divNav .barraNav a {
+.headerNav .divNav .barraNav li a {
   margin-block: 2px;
   text-decoration: none;
   color: #fff;
   position: relative;
   margin-top: 10px;
 }
-.headerNav .divNav .barraNav a:hover {
-  background-color: rgba(255, 255, 255, 0.4352941176);
-  color: #ffffff;
-  border-radius: 100px;
+.headerNav .divNav .barraNav li a:hover {
+  background-color: #ffffff;
+  color: #000;
   transition: 1s;
 }
 
@@ -271,7 +270,7 @@ html, body {
 .bodyNosotros .fondoNosotros .barraNosotros {
   justify-content: space-evenly;
 }
-.bodyNosotros .fondoNosotros .barraNosotros a {
+.bodyNosotros .fondoNosotros .barraNosotros li a {
   text-decoration: none;
   color: #ffffff;
   font-size: 2rem;
@@ -279,11 +278,10 @@ html, body {
   margin: auto;
   font-weight: 700;
 }
-.bodyNosotros .fondoNosotros .barraNosotros a:hover {
-  background-color: rgba(255, 255, 255, 0.4352941176);
-  color: #ffffff;
-  border-radius: 100px;
-  transition: 1s;
+.bodyNosotros .fondoNosotros .barraNosotros li a:hover {
+  background-color: #ffffff;
+  color: #000;
+  transition: 0.5s;
 }
 .bodyNosotros .somos {
   background-image: url(../Assets/img/nosotros.jpg);
@@ -305,6 +303,9 @@ html, body {
 .bodyNosotros .sectionNosotros .col {
   padding-top: 1rem;
   text-align: center;
+}
+.bodyNosotros .sectionNosotros .col .donde {
+  color: rgba(137, 43, 226, 0.8549019608);
 }
 .bodyNosotros .sectionNosotros .col iframe {
   text-align: center;
@@ -332,6 +333,12 @@ html, body {
 .bodyNosotros .sectionNosotros .somosPRIGS .pNosotros {
   text-align: justify;
 }
+.bodyNosotros .sectionNosotros .somosPRIGS .pNosotros .socios {
+  color: rgba(137, 43, 226, 0.8549019608);
+}
+.bodyNosotros .sectionNosotros .somosPRIGS .pNosotros .programa {
+  color: rgba(137, 43, 226, 0.8549019608);
+}
 .bodyNosotros .sectionNosotros .somosPRIGS .pVioleta {
   color: rgba(137, 43, 226, 0.8549019608);
 }
@@ -340,6 +347,9 @@ html, body {
 }
 .bodyNosotros .sectionNosotros .youtube {
   text-align: center;
+}
+.bodyNosotros .sectionNosotros .youtube .intensivo {
+  color: rgba(137, 43, 226, 0.8549019608);
 }
 
 /*==================================================*/
@@ -416,6 +426,13 @@ html, body {
   padding-bottom: 3rem;
   background-color: rgba(239, 239, 239, 0.7647058824);
 }
+.sectionClases .h2Clases {
+  text-decoration: underline;
+}
+.sectionClases .h2Clases .gratis {
+  color: rgba(137, 43, 226, 0.8549019608);
+  font-style: italic;
+}
 .sectionClases .card-img {
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
 }
@@ -436,6 +453,15 @@ html, body {
   color: #ffffff;
   transition: 0.5s;
   border-radius: 10px;
+}
+.sectionClases .pDeportes {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  text-align: justify;
+}
+.sectionClases .pDeportes .spanDeportes {
+  color: rgba(137, 43, 226, 0.8549019608);
+  font-weight: bold;
 }
 .sectionClases .aFuncional {
   text-decoration: none;
@@ -894,7 +920,7 @@ html, body {
 .bodyNosotros .fondoNosotros .barraNosotros {
   justify-content: space-evenly;
 }
-.bodyNosotros .fondoNosotros .barraNosotros a {
+.bodyNosotros .fondoNosotros .barraNosotros li a {
   text-decoration: none;
   color: #ffffff;
   font-size: 2rem;
@@ -902,10 +928,9 @@ html, body {
   margin: auto;
   font-weight: 700;
 }
-.bodyNosotros .fondoNosotros .barraNosotros a:hover {
-  background-color: rgba(255, 255, 255, 0.4352941176);
-  color: #ffffff;
-  border-radius: 100px;
+.bodyNosotros .fondoNosotros .barraNosotros li a:hover {
+  background-color: #ffffff;
+  color: #000;
   transition: 1s;
 }
 .bodyNosotros .main404 {

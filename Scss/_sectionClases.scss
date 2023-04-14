@@ -3,6 +3,15 @@
     padding-bottom: 3rem;
     background-color: #efefefc3;
 
+    .h2Clases{
+        text-decoration: underline;
+
+        .gratis{
+            color: #892be2da;
+            font-style: italic;
+        }
+    }
+
     .card-img{
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
         
@@ -20,6 +29,17 @@
             color: $color-blanco;
             transition: 0.5s;
             border-radius: 10px;
+        }
+    }
+
+    .pDeportes{
+        font-family: $tipografia-alternativa;
+        color: #000000;
+        text-align: justify;
+
+        .spanDeportes{
+            color: #892be2da;
+            font-weight: bold;
         }
     }
 

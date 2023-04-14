@@ -21,7 +21,7 @@
             font-family: $tipografia-general;
             font-weight: 700;
             
-            a{
+            li a{
                 margin-block: 2px;
                 text-decoration: none;
                 color:#fff;
@@ -29,9 +29,8 @@
                 margin-top:10px; 
 
                 &:hover{
-                    background-color: #ffffff6f;
-                    color: $color-blanco;
-                    border-radius: 100px;
+                    background-color: $color-blanco;
+                    color: #000;
                     transition: 1s;
                 }
             }
